@@ -1156,6 +1156,7 @@ class TrayIcon:
             "maint": Image_module.open(resource_path("icons/maint.ico")),
         }
         self._icon_state: str = "pickaxe"
+        self.always_show_icon = True
         self._button = ttk.Button(master, command=self.minimize, text=_("gui", "tray", "minimize"))
         self._button.grid(column=0, row=0, sticky="ne")
 
